@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="marvel.jpg">
+    <title>Captain Marvel Animation</title>
+    <style>
+        header{
+            text-align: center;
+            font-size: 25px;
+        }
+        body{
+            background-color: rgb(80, 80, 80);
+            font-family: 'Titan One', cursive;
+        }
+        .container{
+            border-radius:50px;
+            margin:auto;
+            width:1000px;
+            height:500px;
+            background-image: linear-gradient(to right, rgb(168, 2, 2), rgb(2, 2, 154));
+            text-align: center;
+        }
+        #captain{
+            transition: 1s;
+            z-index:3;
+        }
+        #lorem{
+            position:absolute;
+            height:500px;
+            width:500px;
+            font-size:30px;
+            top:150px;
+            left:300px;
+            z-index:0;
+            color:white;
+            opacity:0%;
+            transition:1s;
+        }
+        #MI{
+            position:absolute;
+            height:100px;
+            width:200px;
+            font-size:30px;
+            top:500px;
+            left:450px;
+            z-index:0;
+            background-color:white;
+            opacity:0%;
+            transition:1s;
+            font-size:20px;
+            font-family: 'Titan One', cursive;
+        }
+        .container:hover #captain{
+            transform: translate(200px);
+        }
+        .container:hover #lorem{
+            opacity:100%;
+        }
+        .container:hover #MI{
+            opacity:100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Captain Marvel</h1>
+    </header>
+    <div class="container">
+        <img src="1.png" id="captain" alt="captain">
+        <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus maiores explicabo alias illum. Nulla, aut asperiores error adipisci voluptatum sunt optio culpa autem? Pariatur explicabo quam id laborum vero.</p>
+        <button id="MI" onclick="location.href = 'more.html';">More Information</button>
+    </div>
+</body>
+</html>
